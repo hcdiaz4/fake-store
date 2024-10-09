@@ -1,0 +1,7 @@
+{
+  "name": "fake-store",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
