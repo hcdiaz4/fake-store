@@ -20,7 +20,9 @@ const DesiredProductsPage: React.FC = () => {
     const fetchDesiredProducts = async () => {
         const getStorageProductList = localStorage.getItem('@desiredProducts');
         const jsonStorageProducts: Products[] = JSON.parse(getStorageProductList!);
-        setDesiredList(jsonStorageProducts);
+        if (getStorageProductList) {
+            setDesiredList(jsonStorageProducts);
+        }
     }
 
     const orderByPrice = (event: any, type?: string) => {
@@ -87,6 +89,20 @@ const DesiredProductsPage: React.FC = () => {
 
     }
 
+    const desiredProductsRender = desiredList.length ? (
+        <div className="grid">
+            {desiredList.map(product => {
+                return (
+                    <ProductsCard product={product} key={product.id} />
+                )
+            })}
+        </div>
+    ) : (
+        <div>
+            You have no products in your wish list.
+        </div>
+    )
+
     return (
         <IonPage>
             <IonHeader>
@@ -112,13 +128,8 @@ const DesiredProductsPage: React.FC = () => {
             <IonContent fullscreen className="ion-padding">
                 <section>
                     <h3>Tu productos deseados</h3>
-                    <div className="grid">
-                        {desiredList.map(product => {
-                            return (
-                                <ProductsCard product={product} key={product.id} />
-                            )
-                        })}
-                    </div>
+                    {desiredProductsRender}
+
                 </section>
             </IonContent>
         </IonPage>

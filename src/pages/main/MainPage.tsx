@@ -39,7 +39,7 @@ const MainPage: React.FC = () => {
             </SwiperSlide>
         )
     }) : (
-        <div>No has guardado nada</div>
+        <div>You have no products in your wish list.</div>
     )
 
     return (
