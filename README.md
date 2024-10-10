@@ -18,7 +18,7 @@ Esta aplicación permite a los usuarios:
 1. Clonación de repositorio:
 
 ```bash
-git clone https://repo.git
+git clone https://github.com/hcdiaz4/fake-store.git
 ```
 
 2. Se recomienda hacer la instalacion de las dependencias bajo la version **20.15.0** de node.
