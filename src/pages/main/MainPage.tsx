@@ -32,7 +32,7 @@ const MainPage: React.FC = () => {
         setDesiredProducts(listProducts);
     }
 
-    const desiredProductsHTML = desiredProducts ? desiredProducts.map(products => {
+    const desiredProductsHTML = desiredProducts.length ? desiredProducts.map(products => {
         return (
             <SwiperSlide key={products.id} className="">
                 <ProductsCardCarousel product={products} />
@@ -72,7 +72,7 @@ const MainPage: React.FC = () => {
                     <div className="desired-products__title">
                         <div>
                             <IonIcon size="large" icon={heart}></IonIcon>
-                            <h3>Your Desired Products</h3>
+                            <h3>Your wish list</h3>
                         </div>
                         <IonButton routerLink={'/desired-products'} size="small">See all</IonButton>
                     </div>

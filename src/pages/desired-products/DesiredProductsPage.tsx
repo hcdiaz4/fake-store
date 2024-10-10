@@ -28,7 +28,6 @@ const DesiredProductsPage: React.FC = () => {
     const orderByPrice = (event: any, type?: string) => {
 
 
-        console.log(event.target.value);
         let copyDesiredList: Products[] = desiredList;
         copyDesiredList = desiredList.sort((a: Products, b: Products) => {
             if (a.price > b.price) {
@@ -127,7 +126,7 @@ const DesiredProductsPage: React.FC = () => {
             </IonItem>
             <IonContent fullscreen className="ion-padding">
                 <section>
-                    <h3>Tu productos deseados</h3>
+                    <h3>Your wish list</h3>
                     {desiredProductsRender}
 
                 </section>
