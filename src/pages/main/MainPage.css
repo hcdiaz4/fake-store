@@ -1,0 +1,35 @@
+section {
+    margin-bottom: 30px;
+}
+
+.swiper {
+    padding: 10px 0;
+}
+
+ion-card {
+    margin: 20px 0;
+}
+
+ion-card-title {
+    /* --color: #52ffe4; */
+    font-size: 14px;
+}
+
+
+
+.desired-products .desired-products__title {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    padding: 20px 0;
+    justify-content: space-between;
+}
+
+.desired-products .desired-products__title h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.desired-products .desired-products__title a {
+    text-decoration: none;
+}

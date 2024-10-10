@@ -1,2 +1,20 @@
 /* For information on how to create your own theme, please see:
 http://ionicframework.com/docs/theming/ */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    grid-auto-rows: minmax(200px, auto);
+}
+
+.wrap-icon {
+    top: 10px;
+    right: 10px;
+    position: absolute;
+    background-color: #FFFFFF;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
